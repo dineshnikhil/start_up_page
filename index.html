@@ -5,14 +5,92 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
 		<title>Document</title>
+
+		<script>
+			function redirectToGoogle() {
+				var query = document.getElementById('search-box').value;
+				if (query.trim() !== '') {
+					var searchUrl =
+						'https://www.bing.com/search?q=' + encodeURIComponent(query);
+					window.location.href = searchUrl;
+				}
+			}
+		</script>
 	</head>
 	<body>
-		<h1>hello world!</h1>
-		<p class="card">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed
-			aut omnis fugiat, voluptate animi excepturi explicabo dolore error dolorem
-			qui tenetur iste, ex nam eum harum consectetur quasi laudantium.
-		</p>
-		<button>good to hear..!</button>
+		<form onsubmit="redirectToGoogle(); return false;">
+			<input type="text" id="search-box" placeholder="Search..." />
+			<input type="submit" value="Search" />
+		</form>
+		<div class="main">
+			<div class="tools">
+				<!-- shortcuts divs  -->
+				<div class="shortcuts">
+					<!-- for development links -->
+					<div class="shortcuts_div">
+						<h2>Developoment sites</h2>
+						<div class="shortcuts_interal_div">
+							<div class="short_cut">
+								<a href="http://" target="_blank" rel="noopener noreferrer">
+									Gpt
+								</a>
+							</div>
+
+							<div class="short_cut">
+								<a href="http://" target="_blank" rel="noopener noreferrer">
+									Github
+								</a>
+							</div>
+
+							<div class="short_cut">
+								<a href="http://" target="_blank" rel="noopener noreferrer">
+									Color Hunt
+								</a>
+							</div>
+
+							<div class="short_cut">
+								<a href="http://" target="_blank" rel="noopener noreferrer">
+									Coloors
+								</a>
+							</div>
+
+							<div class="short_cut">
+								<a href="http://" target="_blank" rel="noopener noreferrer">
+									Fontawsome Icons
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- for entertainment links -->
+					<div class="shortcuts_div">
+						<h2>Entertainment sites</h2>
+						<div class="shortcuts_interal_div">
+							<div class="short_cut">
+								<a href="http://" target="_blank" rel="noopener noreferrer">
+									Youtube
+								</a>
+							</div>
+
+							<div class="short_cut">
+								<a href="http://" target="_blank" rel="noopener noreferrer">
+									Netflix
+								</a>
+							</div>
+
+							<div class="short_cut">
+								<a href="http://" target="_blank" rel="noopener noreferrer">
+									Aniwatch
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- tasks div -->
+				<div class="todos">
+					<h2>todos of the day</h2>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

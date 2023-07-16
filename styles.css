@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 body {
 	/* background-color: #121212; */
 	background-color: #252422;
 	color: #e2e3e3;
-	font: 'Cascadia Code';
+	font-family: 'Syne Mono', monospace;
 }
 
 h1 {
@@ -16,5 +18,62 @@ h1 {
 
 button {
 	padding: 2%;
+	background-color: #2ab24d;
+}
+
+.tools {
+	display: flex;
+}
+
+.shortcuts {
+	width: 50%;
+	height: auto;
+}
+
+.todos {
+	width: 50%;
+
+	background-color: #2b2a2b;
+	padding: 1% 2%;
+	margin: 1%;
+	border-radius: 0.5rem;
+}
+
+/* =========== shortcuts_div ================ */
+
+.shortcuts_div {
+	background-color: #2b2a2b;
+	padding: 1% 2%;
+	margin: 2%;
+	border-radius: 0.5rem;
+}
+
+.shortcuts_interal_div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* ============ short_cut icon styling ================ */
+
+.short_cut {
+	width: auto;
+	height: 20px;
+	padding: 0.7% 2%;
+	margin: 1%;
+
+	background-color: #5b5a5a;
+
+	border-radius: 0.4rem;
+	text-align: center;
+}
+
+.short_cut a {
+	text-decoration: none;
+	color: #e2e3e3;
+	font-size: 1.2rem;
+}
+
+.short_cut:hover {
+	cursor: pointer;
 	background-color: #2ab24d;
 }
